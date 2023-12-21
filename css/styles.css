@@ -1,0 +1,279 @@
+/*
+Colors used
+
+Text Color (Dark Grey): #2b2b2b
+Primary Color (Sky Blue): #bcced7
+Secondary Color (Dark Purple): #800080
+*/
+
+:root {
+  --background-color: #bcced7;
+  --text-color: #2b2b2b;
+  --table-color: #000;
+  --table-hover-color: #cacaca;
+  --link-color: #330fb1;
+  --visited-link-color: #800080;
+  --active-link-color: #008000;
+  --button-color: #9bae96;
+  --button-hover-color: #95afc2;
+  --grid-color: grey;
+  --sun-start-color: #edc655;
+  --sun-end-color: #f76414;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+p,
+h1,
+h3 {
+  color: var(--text-color);
+}
+
+h1,
+h3 {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 2;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 2;
+}
+
+.about-me-title,
+.experience-title {
+  text-align: center;
+}
+
+.experience-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.experience-table table {
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.experience-table table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #000;
+}
+
+.experience-table td,
+.experience-table th {
+  padding: 12px;
+  border-top: 1px solid #000;
+}
+
+.experience-table table tbody tr:hover {
+  background-color: #cacaca;
+}
+
+a {
+  color: var(--link-color);
+  transition-duration: 0.9;
+  transition-property: text-decoration;
+}
+
+a:visited {
+  color: var(--visited-link-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--active-link-color);
+}
+
+a:focus {
+  outline: 2px solid var(--link-color);
+  text-decoration: none;
+}
+
+.styled_button {
+  font-family: inherit;
+  background-color: var(--button-color);
+  font-size: 16px;
+  padding: 16px, 20px;
+  transition-duration: 0.9s;
+  transition-property: opacity;
+}
+
+.styled_button:hover {
+  background-color: var(--button-hover-color);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.styled_button:focus {
+  border: 2px solid var(--link-color);
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.header-logo {
+  width: 200px;
+  height: 70px;
+  margin: 10px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+
+#grid-container .grid__item {
+  background-color: var(--grid-color);
+  text-align: center;
+  min-height: 100px;
+  margin: 10px;
+}
+
+@media all and (max-width: 500px) {
+  #grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@keyframes color-change {
+  from {
+    fill: var(--sun-start-color);
+  }
+  to {
+    fill: var(--sun-end-color);
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  #grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
