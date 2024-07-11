@@ -185,7 +185,6 @@ a:focus {
 }
 
 #grid-container .grid__item {
-  background-color: var(--grid-color);
   text-align: center;
   min-height: 100px;
   margin: 10px;
