@@ -179,6 +179,15 @@ a:focus {
   margin: 10px;
 }
 
+.api_image {
+  width: 140px;
+}
+
+.myflix_image {
+  width: 140px;
+  height: 140px;
+}
+
 #grid-container {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
