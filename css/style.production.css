@@ -148,6 +148,11 @@ a:focus {
   border-radius: 50%;
 }
 
+.indeed_icon {
+  width: 45px;
+  height: 45px;
+}
+
 .page-footer {
   clear: both;
   display: -webkit-box;
@@ -199,6 +204,21 @@ a:focus {
   width: 200px;
   height: 70px;
   margin: 10px;
+}
+
+.api_image {
+  width: 140px;
+  border-radius: 10%;
+}
+
+.myflix_image {
+  width: 140px;
+  height: 140px;
+  border-radius: 10%;
+}
+
+.meet_image {
+  border-radius: 10%;
 }
 
 #grid-container {
