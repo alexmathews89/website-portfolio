@@ -88,6 +88,10 @@ h1 {
   background-color: #cacaca;
 }
 
+.resume_link {
+  text-decoration: none;
+}
+
 a {
   color: var(--link-color);
   transition-duration: 0.9;
