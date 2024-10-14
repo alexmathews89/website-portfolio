@@ -142,6 +142,11 @@ a:focus {
   height: 45px;
 }
 
+.linkedin_icon {
+  width: 45px;
+  height: 45px;
+}
+
 .page-footer {
   clear: both;
   display: flex;
