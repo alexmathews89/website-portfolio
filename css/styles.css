@@ -60,6 +60,10 @@ h1 {
   text-align: center;
 }
 
+.contact-title {
+  text-align: center;
+}
+
 .experience-table {
   display: flex;
   flex-direction: column;
@@ -147,8 +151,8 @@ a:focus {
 }
 
 .linkedin_icon {
-  width: 45px;
-  height: 45px;
+  width: 52px;
+  height: 52px;
 }
 
 .page-footer {
@@ -304,4 +308,13 @@ a:focus {
   h1 {
     font-size: 22px;
   }
+}
+
+.contact-list-item {
+  text-align: center;
+  list-style: none;
+}
+
+.message-link {
+  text-align: center;
 }
