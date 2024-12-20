@@ -92,6 +92,15 @@ h1 {
   background-color: #cacaca;
 }
 
+.styled_button_resume {
+  font-family: inherit;
+  background-color: var(--button-color);
+  font-size: 16px;
+  padding: 16px, 20px;
+  transition-duration: 0.9s;
+  transition-property: opacity;
+}
+
 .resume_link {
   text-decoration: none;
 }
@@ -317,4 +326,9 @@ a:focus {
 
 .message-link {
   text-align: center;
+}
+
+.resume_div {
+  text-align: center;
+  margin-top: 12px;
 }
